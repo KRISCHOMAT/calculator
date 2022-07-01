@@ -1,0 +1,138 @@
+:root {
+  /* preset A */
+  --btn-primary: #e6ded7;
+  --btn-secondary: #64719a;
+  --btn-hipster: var(--red);
+  --btn-main-color: var(--black);
+  --background-light: #3b4664;
+  --background-display: #181f32;
+  --background-controls: #252d43;
+  --header-color: var(--white);
+  --display-color: var(--white);
+
+  /*  */
+
+  --yellow: #fee956;
+  --black: #4b515e;
+  --white: #f8faf6;
+  --red: #d13f30;
+  --green: #00decf;
+}
+
+body,
+html {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-light);
+  font-family: "Courier New", Courier, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h3,
+h2 {
+  padding: 5px;
+  margin: 0;
+}
+
+.mainContainer {
+  margin: 100px auto;
+  width: 100%;
+  max-width: 350px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--header-color);
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+}
+.theme-btn-container {
+  background-color: var(--background-display);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.theme button {
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  border: 0;
+  cursor: pointer;
+}
+
+#theme-a {
+  background-color: var(--red);
+}
+
+#theme-b {
+  background-color: var(--white);
+}
+
+#theme-c {
+  background-color: var(--white);
+}
+#display {
+  height: 100px;
+  background-color: var(--background-display);
+  color: var(--display-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+#controls {
+  display: grid;
+  border-radius: 10px;
+  gap: 10px;
+  padding: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--background-controls);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  font-size: large;
+  cursor: pointer;
+  border-bottom: 3.5px solid rgb(0, 0, 0, 0.5);
+  background-color: var(--btn-primary);
+  color: var(--btn-main-color);
+}
+
+#del {
+  background-color: var(--btn-secondary);
+  color: var(--white);
+}
+#reset {
+  background-color: var(--btn-secondary);
+  color: var(--white);
+  grid-column: 1 / 3;
+}
+
+#equal {
+  background-color: var(--btn-hipster);
+  color: var(--white);
+  grid-column: 3 / 5;
+}
